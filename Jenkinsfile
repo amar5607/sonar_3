@@ -19,7 +19,7 @@ pipeline{
                        error "Pipeline aborted due to quality gate failure: ${qg.status}"
                       }
                     }
-		    sh "mvn clean install"
+		    sh "mvn clean package"
                   }
                 }  
               }
